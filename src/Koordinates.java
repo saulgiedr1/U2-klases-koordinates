@@ -55,11 +55,11 @@ public class Koordinates {
         return  Math.sqrt(Math.pow((koord1.getX() - koord2.getX()) , 2) + Math.pow((koord1.getY()-koord2.getY()), 2));
     }
     public static Koordinates koordVidurioTaskas (Koordinates koord1, Koordinates koord2){
-          double vidurys;
-        Koordinates tempCoord = new Koordinates();
-        tempCoord.setX((koord1.getX()+koord2.getX())/2);
-        tempCoord.setY((koord1.getY()+koord2.getY())/2);
-           return tempCoord;
+
+        Koordinates vidurys = new Koordinates();
+        vidurys.setX((koord1.getX()+koord2.getX())/2);
+        vidurys.setY((koord1.getY()+koord2.getY())/2);
+           return vidurys;
 
    }
 

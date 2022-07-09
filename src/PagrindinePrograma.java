@@ -17,8 +17,8 @@ public class PagrindinePrograma {
         double atstumas = Koordinates.atstumasTarpTasku(koord1, koord2);
         System.out.println("Atstumas tarp A ir B : " + atstumas);
 
-        //double vidurys = Koordinates.koordVidurioTaskas(koord1,koord2,koord3);
-        System.out.println("vidurys = " + Koordinates.koordVidurioTaskas(koord1,koord2));
+
+        System.out.println("Vidurio tasko koordinates = " + Koordinates.koordVidurioTaskas(koord1,koord2));
 
 
 
