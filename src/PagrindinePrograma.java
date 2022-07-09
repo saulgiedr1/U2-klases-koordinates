@@ -4,8 +4,7 @@ public class PagrindinePrograma {
     public static void main(String[] args) {
 
         Koordinates koord1 = new Koordinates(1,4);
-        Koordinates koord2 = new Koordinates(4,8);
-        Koordinates koord3 = new Koordinates();
+        Koordinates koord2 = new Koordinates(4,200);
 
 
         System.out.println("Pirmine tasko A koordinate : " + koord1);
@@ -18,8 +17,8 @@ public class PagrindinePrograma {
         double atstumas = Koordinates.atstumasTarpTasku(koord1, koord2);
         System.out.println("Atstumas tarp A ir B : " + atstumas);
 
-        double vidurys = Koordinates.koordVidurioTaskas(koord1,koord2,koord3);
-        System.out.println("vidurys = " + vidurys);
+        //double vidurys = Koordinates.koordVidurioTaskas(koord1,koord2,koord3);
+        System.out.println("vidurys = " + Koordinates.koordVidurioTaskas(koord1,koord2));
 
 
 

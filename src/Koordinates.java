@@ -54,11 +54,12 @@ public class Koordinates {
     public static double atstumasTarpTasku (Koordinates koord1, Koordinates koord2){
         return  Math.sqrt(Math.pow((koord1.getX() - koord2.getX()) , 2) + Math.pow((koord1.getY()-koord2.getY()), 2));
     }
-    public static double koordVidurioTaskas (Koordinates koord1, Koordinates koord2, Koordinates koord3){
+    public static Koordinates koordVidurioTaskas (Koordinates koord1, Koordinates koord2){
           double vidurys;
-        koord3.getX()=(koord1.getX()+koord2.getX())/2;
-        koord3.getY()=(koord1.getY()+koord2.getY())/2;
-           return vidurys;
+        Koordinates tempCoord = new Koordinates();
+        tempCoord.setX((koord1.getX()+koord2.getX())/2);
+        tempCoord.setY((koord1.getY()+koord2.getY())/2);
+           return tempCoord;
 
    }
 
