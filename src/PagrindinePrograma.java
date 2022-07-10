@@ -20,6 +20,8 @@ public class PagrindinePrograma {
 
         System.out.println("Vidurio tasko koordinates : " + Koordinates.koordVidurioTaskas(koord1,koord2));
 
+        System.out.println("Koordinates.pokytis(3, 2, koord2) = " + Koordinates.pokytis(3, 2, koord2));
+
 
 
 

@@ -3,6 +3,8 @@ public class Koordinates {
     private double x;
     private double y;
 
+
+
     //konstruktorius;
 
     public Koordinates() {
@@ -61,6 +63,12 @@ public class Koordinates {
         vidurys.setY((koord1.getY()+koord2.getY())/2);
            return vidurys;
 
+   }
+
+   public static Koordinates pokytis (double dx, double dy, Koordinates coord) {
+        coord.setX(coord.x + dx);
+        coord.setY(coord.y + dy);
+        return coord;
    }
 
 
