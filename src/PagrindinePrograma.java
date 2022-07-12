@@ -4,7 +4,7 @@ public class PagrindinePrograma {
     public static void main(String[] args) {
 
         Koordinates koord1 = new Koordinates(1,4);
-        Koordinates koord2 = new Koordinates(4,200);
+        Koordinates koord2 = new Koordinates(4,50);
 
 
         System.out.println("Pirmine tasko A koordinate : " + koord1);
@@ -20,10 +20,13 @@ public class PagrindinePrograma {
 
         System.out.println("Vidurio tasko koordinates : " + Koordinates.koordVidurioTaskas(koord1,koord2));
 
-        System.out.println("Koordinates.pokytis(3, 2, koord2) = " + Koordinates.pokytis(3, 2, koord2));
 
 
+       // System.out.println("Koordinates.pokytis(3, 2, koord2) = " + Koordinates.pokytis(3, 2, koord2));
 
+
+        koord2.deltaPokytis(5, -5);
+        System.out.println("delta pokytis" + koord2);
 
     }
 

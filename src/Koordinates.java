@@ -5,6 +5,7 @@ public class Koordinates {
 
 
 
+
     //konstruktorius;
 
     public Koordinates() {
@@ -69,6 +70,13 @@ public class Koordinates {
         coord.setX(coord.x + dx);
         coord.setY(coord.y + dy);
         return coord;
+   }
+
+   public void deltaPokytis(double dx, double dy){
+
+        x += dx;
+        y += dy;
+
    }
 
 
